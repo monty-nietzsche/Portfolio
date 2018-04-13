@@ -1,0 +1,625 @@
+  @import url(http://weloveiconfonts.com/api/?family=fontawesome|zocial);
+
+  /* ---------------------------------------------------------------- */
+  /*                     Styles for the HTML tags                     */
+  /* ---------------------------------------------------------------- */
+
+  *{
+    box-sizing: border-box;
+  }
+
+  body {	
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  section, aside {
+    padding: 10px;
+  }
+
+  figure {
+    width:100%;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 0px 0px rgba(123,72,22, 0.2);
+  }
+  
+  figure a, a:hover, a active {
+    color: white;
+  }
+
+  p {
+    text-justify:inter-word;
+    text-align: justify;
+    line-height: 1.5em;
+  }
+  a {
+    text-decoration: none;
+    color: inherit; 
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Headland One', serif;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /*            Headers styles (Logo and navigation bar)              */
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------| Logo bar |------------------------- */
+
+  .header{
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    background: white;
+    z-index:10000;
+  }
+
+  .wizard {
+    font-size: 50px;
+    vertical-align: middle;
+    color:#E37222;
+  }
+
+  .logo {
+    font-family: 'Headland One', serif;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+  .logo-bar{
+    padding: 10px;
+    text-align: center;
+    color: teal;
+  }
+
+  /* -----------------------| Navigation bar |----------------------- */
+
+  /* Style for the picture navigation bar */
+
+  .navbar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-content: center;
+    border: 1px solid rgba(238, 238, 238, 1);
+    height:40px !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 1200px;margin-left:auto; margin-right:auto;
+    padding-left:5%;padding-right:5%;
+  }
+
+  /* Style for the text navigation bar */
+
+  .navtext {
+    position: relative; top:-10px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.5);;
+    font-size:10px;
+    height:15px !important;
+    max-width: 1200px;margin-left:auto; margin-right:auto;
+    padding-left:5%;padding-right:5%;
+  }
+
+  .navbar a {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+    white-space:nowrap;
+    background-color: white;
+    font-size: 16px;
+    margin-right:5px;
+    margin-left:5px;
+  }
+
+  #textnav{
+    display:none;
+  }
+
+  .navbar a:hover {
+    color:#E37222;
+  }
+
+  .navbar a:target {
+    background-color: #E37222;
+    color:white;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /*               Styles for sections and containers                 */
+  /* ---------------------------------------------------------------- */
+
+  .wrapper{
+    display: flex; flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    width:100%; top:110px;
+    max-width: 1200px;margin-left:auto; margin-right:auto;
+    padding-left:5%;padding-right:5%;
+    margin-bottom: 20px;
+  }
+
+  .main {
+    display: flex; flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width:100%; 
+  }
+
+  .activities{
+    display: flex; flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width:100%; 
+  }
+
+  .books{
+    width:100%;
+  }
+
+  .blog{
+    font-family: 'Lato', serif;
+    width: 100%;
+  }
+
+  .footer {
+    font-family: 'Lato', cursive;
+    font-size: 14px; font-weight: 500;
+    text-align: center; vertical-align: top;
+    background:#E37222; color:white;
+    position: fixed; bottom:0px;
+    width:100%; height: 30px !important;
+    left: 50%; transform: translateX(-50%);
+    max-width: 1200px;margin-left:auto; margin-right:auto;
+    padding-left:5%;padding-right:5%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .section-title {
+    padding: 10px;
+    border-bottom: 2px dotted rgba(0, 128, 128,0.2);
+    margin-bottom: 10px;
+    color: grey;
+
+  }
+
+  /* ---------------------------------------------------------------- */
+  /*             Style for the degree name and details                */
+  /* ---------------------------------------------------------------- */
+
+  .degree-title{
+    color:#E37222;
+    font-size:16px;
+    line-height: 1.4em;
+  }
+
+  .degree-details{
+    color:grey;
+    font-size:13px;
+  }
+
+  .edu-list{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:space-around;
+    align-content:flex-start;
+    padding:4px;
+    width:100%;
+    line-height: 1.4em;
+  }
+
+  .edu-list a
+  .edu-list a:hover
+  .edu-list a:active
+  {
+      padding:4px;
+      background: teal;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 12px;
+  }
+
+
+  /* ---------------------------------------------------------------- */
+  /*                  Style for the images (img tags)                 */
+  /* ---------------------------------------------------------------- */
+
+  .hel_image{
+    width:80%;
+    border-radius:10px;
+    margin:20px;
+  }
+
+  .responsive {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-bottom:10px;
+  }
+
+  .rounded {
+    border-radius: 10px;
+  }
+
+  .half-rounded {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .in-article{
+    vertical-align: top;
+    width:30%;
+    max-width:200px;
+    height:auto;
+    float:left;
+    border-radius: 10px;
+    margin:10px;
+  }
+
+  .in-article:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /*                Style for the projects and apps                   */
+  /* ---------------------------------------------------------------- */
+
+  .projectbox {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    color:white;
+  }
+
+  .app-name {
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+
+  .app-details {
+    font-family: 'Questrial', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .featured {
+    background: #E37222;
+    cursor: pointer;
+    border:1px solid teal;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /*                  Style for the blog's articles                   */
+  /* ---------------------------------------------------------------- */
+
+  article{
+    border-bottom:1px double teal;
+    padding:10px;
+    padding-bottom:0;
+  }
+
+  .readmore {
+    font-size:12px;
+    text-align:right;
+    background: teal;
+    padding:4px;
+    border-radius: 4px;
+    text-decoration: none;
+    color:white;
+  } 
+
+  article a
+  article a:hover
+  article a:active{
+
+    text-decoration: none;
+  }
+
+  .main-article {
+    background:rgba(255, 165, 0, 0.2);
+    min-height: 180px;
+    font-size:16px;
+  }
+
+  .more-articles{
+    font-size:14px;
+  }
+
+  .colored {
+    color:teal;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /*                  Style for the social icons                      */
+  /* ---------------------------------------------------------------- */
+
+  .social{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width:100%;
+    color:teal;
+  }
+
+  .social li{
+    padding:4px;
+    font-size:24px;
+  }
+
+  .social li:last-child {
+    margin-left:auto;
+    margin-right: 0;
+    
+  }
+
+  /* ---------------------------------------------------------------- */
+  /*                  Style for the books' section                    */
+  /* ---------------------------------------------------------------- */
+
+  .books{
+    overflow: hidden;
+  }
+
+  .book-list img{
+    width:64px;
+    height:auto;
+    float:left;
+    border:1px solid rgba(128, 128, 128,0.5);
+    padding:1px;
+    border-radius: 5px;
+    margin:5px;
+  }
+
+  .book-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height:450px !important;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .spacer{
+    width:100%;
+    padding-bottom:15%;
+    background: white !important;
+  }
+
+  .book-list li {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    cursor: pointer;
+    transition: all .5s ease;
+    overflow:hidden;
+    padding-bottom:4px;
+    padding-left:8px;
+    background:teal;
+    border-radius: 5px;
+    border:solid 1px white;
+  }
+
+  .book-list li:hover {
+    background: #E37222;
+  }
+
+  .book-list li.active {
+    flex: 11;
+    background: #fff;
+    cursor: default;
+    border:solid 1px teal;
+  }
+
+  .book-list li.active h5 {
+    color: teal;
+  }
+
+  .book-list li.active .book-title {
+    opacity: 1;
+  }
+
+  .book-list li.active .book-description {
+    flex: 18;
+    opacity: 1;
+    transform: scaleX(1);
+    color: teal;
+  }
+
+  .book-list li .book-title {
+    flex: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding-top: 4px;
+    text-align: left;
+    color: white;
+  }
+
+  .book-list li .book-title h5 {
+    margin: 0;
+    width:100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .book-list li .book-description {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    font-size:12px;
+    width:100%;
+    margin: 0;
+    padding: 5%;
+    opacity: 0;
+    transition: all .25s .1s ease-out;
+  } 
+
+  .book-list a{
+    background: teal;
+    border-radius:5px;
+    color:white;
+    text-decoration:none;
+    padding:4px;
+    font-size: 12px;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /*                        Responsive Layout                         */
+  /* ---------------------------------------------------------------- */
+
+  /* --------------------| Screen width>500px |---------------------- */
+
+  /* - Hide picture navigation bar and show text navigation bar  */
+  /* - Increase the font-size of the description of the books.   */
+  
+  @media screen and (min-width: 500px) {
+
+    #picnav {
+      display: none;
+    }
+
+    #navtext{
+      display: none;
+    }
+
+    #textnav {
+      display: flex;
+    }
+
+    .book-list li .book-description {
+      font-size:14px;
+    } 
+
+  }
+
+  /* --------------------| Screen width>700px |---------------------- */
+
+  /* - Put biography and contact boxes side by side (div main)        */
+  /* - Put education and blog boxes side by side    (div actitivities)*/
+
+  @media screen and (min-width: 700px) {
+    .main {
+      width:100%;
+      flex-flow: row wrap;
+      align-content: stretch;
+    }
+    .books{
+      width:100%;
+      flex:1;
+    }
+    .biography{
+      order:0;
+      flex:1;
+      width:40%;
+    }
+    .contact{
+      order:1;
+      flex: 1;
+      width:40%;
+    }
+    .projects{
+      width:100%;
+      order:3;
+    }
+    .blog{
+      flex:1;
+      width:60%;
+      order: 4;
+    }
+    .education{
+      flex:1;
+      width:35%;
+      order:5;
+    }
+    .project{
+      width:32%;
+    }
+
+  }
+
+  /* --------------------| Screen width>900px |---------------------- */
+
+  /* - Stack biography, projects and contact vertically  (div main)   */
+  /* - Position books to the right                     (aside books)  */
+  /* - Put blog and eduction under                   (div activities) */
+  /* - Hide the picture in the contact section                        */
+
+  @media screen and (min-width: 900px) {
+
+    .biography{
+      width: 100%;
+      order:1;
+    }
+
+    .projects{
+      width:100%;
+      order:2;
+    }
+
+    .contact{
+      width: 100%;
+      order:3;
+    }
+
+    .main {
+      width:60%;
+      flex-flow: row wrap;
+      align-content: stretch;
+      order:1;
+    }
+
+    .books{
+      width:35%;
+      flex:1;
+      order:2;
+    }
+
+    .activities{
+      width:100%;
+      order:3;
+    }
+
+    .hel_image{
+      display: none;
+    }
+
+    .books{
+      height:650px;
+      padding-bottom:20%;
+    }
+
+  }
+
