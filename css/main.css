@@ -22,7 +22,8 @@
     margin-bottom: 5px;
   }
 
-  section, aside {
+  section,
+  aside {
     padding: 10px;
   }
 
@@ -46,12 +47,18 @@
     text-align: justify;
     line-height: 1.5em;
   }
+
   a {
     text-decoration: none;
     color: inherit; 
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Headland One', serif;
   }
 
@@ -61,7 +68,7 @@
 
   /* ---------------------------| Logo bar |------------------------- */
 
-  .header{
+  header {
     position: fixed;
     top:0; left:0;
     width: 100%;
@@ -72,7 +79,7 @@
   .wizard {
     font-size: 50px;
     vertical-align: middle;
-    color:#E37222;
+    color:#e37222;
   }
 
   .logo {
@@ -126,8 +133,7 @@
     white-space:nowrap;
     background-color: white;
     font-size: 16px;
-    margin-right:5px;
-    margin-left:5px;
+    margin: 0 5px 0 5px;
   }
 
   #textnav{
@@ -135,11 +141,11 @@
   }
 
   .navbar a:hover {
-    color:#E37222;
+    color:#e37222;
   }
 
   .navbar a:target {
-    background-color: #E37222;
+    background-color: #e37222;
     color:white;
   }
 
@@ -157,7 +163,7 @@
     margin-bottom: 20px;
   }
 
-  .main {
+  main {
     display: flex; flex-wrap: wrap;
     justify-content: center;
     position: relative;
@@ -180,11 +186,11 @@
     width: 100%;
   }
 
-  .footer {
+  footer {
     font-family: 'Lato', cursive;
     font-size: 14px; font-weight: 500;
     text-align: center; vertical-align: top;
-    background:#E37222; color:white;
+    background:#e37222; color:white;
     position: fixed; bottom:0px;
     width:100%; height: 30px !important;
     left: 50%; transform: translateX(-50%);
@@ -202,12 +208,19 @@
 
   }
 
+  .section-content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   /* ---------------------------------------------------------------- */
   /*             Style for the degree name and details                */
   /* ---------------------------------------------------------------- */
 
   .degree-title{
-    color:#E37222;
+    color:#e37222;
     font-size:16px;
     line-height: 1.4em;
   }
@@ -244,9 +257,9 @@
   /* ---------------------------------------------------------------- */
 
   .hel_image{
-    width:80%;
-    border-radius:10px;
-    margin:20px;
+    width: 80%;
+    border-radius: 10px;
+    margin: 20px;
   }
 
   .responsive {
@@ -272,7 +285,6 @@
     width:30%;
     max-width:200px;
     height:auto;
-    float:left;
     border-radius: 10px;
     margin:10px;
   }
@@ -309,7 +321,7 @@
   }
 
   .featured {
-    background: #E37222;
+    background: #e37222;
     cursor: pointer;
     border:1px solid teal;
   }
@@ -387,21 +399,21 @@
   }
 
   .book-list img{
-    width:64px;
-    height:auto;
-    float:left;
-    border:1px solid rgba(128, 128, 128,0.5);
-    padding:1px;
+    width: 15%;
+    min-width: 64px;
+    height: auto;
+    border: 1px solid rgba(128, 128, 128,0.5);
+    padding: 1px;
     border-radius: 5px;
-    margin:5px;
+    margin: 5px 5px 20px 5px;
   }
 
   .book-list {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    height:450px !important;
-    width:100%;
+    height: 450px !important;
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -428,7 +440,7 @@
   }
 
   .book-list li:hover {
-    background: #E37222;
+    background: #e37222;
   }
 
   .book-list li.active {
@@ -459,7 +471,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    margin: 0;
+    margin-bottom: 10px;
     padding-top: 4px;
     text-align: left;
     color: white;
@@ -476,8 +488,8 @@
   .book-list li .book-description {
     flex: 1;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: flex-end;
     font-size:12px;
     width:100%;
@@ -487,14 +499,22 @@
     transition: all .25s .1s ease-out;
   } 
 
-  .book-list a{
+  .book-list a {
     background: teal;
-    border-radius:5px;
-    color:white;
-    text-decoration:none;
-    padding:4px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
     font-size: 12px;
+    width: 100%;
+    text-align: right;
   }
+
+  .book-list p {
+    flex:1;
+    width: 80%;
+  }
+
 
   /* ---------------------------------------------------------------- */
   /*                        Responsive Layout                         */
@@ -531,7 +551,7 @@
   /* - Put education and blog boxes side by side    (div actitivities)*/
 
   @media screen and (min-width: 700px) {
-    .main {
+    main {
       width:100%;
       flex-flow: row wrap;
       align-content: stretch;
@@ -594,7 +614,7 @@
       order:3;
     }
 
-    .main {
+    main {
       width:60%;
       flex-flow: row wrap;
       align-content: stretch;
